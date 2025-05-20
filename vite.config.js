@@ -1,4 +1,11 @@
-export default {
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+import { defineConfig } from 'vite';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
+export default defineConfig({
   root: 'src',
   build: {
     outDir: 'dist',
@@ -10,4 +17,10 @@ export default {
       generateScopedName: '[name]__[local]___[hash:base64:5]',
     },
   },
-};
+  assetsInclude: ['**/*.svg'],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
+});

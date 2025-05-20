@@ -1,0 +1,57 @@
+@use '@/shared/styles/constants.scss' as *;
+
+.panel {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.linksWrap {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.contactsWrap {
+  display: flex;
+  align-items: center;
+
+  > * {
+    position: relative;
+    padding: 0 15px;
+
+    &:not(:first-child) {
+      padding-left: 15px;
+    }
+
+    &:not(:last-child) {
+      padding-right: 15px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1px;
+        height: 16px;
+        background-color: $color-grey-700;
+      }
+    }
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
+.memberText {
+  color: $color-grey-400;
+  font-family: $font-family;
+  font-size: $font-size-xs;
+  font-weight: $font-weight-regular;
+}

@@ -1,0 +1,10 @@
+@use '@/shared/styles/constants.scss' as *;
+
+.link {
+  color: $color-grey-100;
+  font-family: $font-family;
+  font-size: $font-size-m;
+  font-weight: $font-weight-regular;
+  line-height: 26px;
+  text-decoration: none;
+}

@@ -1,0 +1,13 @@
+@use '@/shared/styles/constants.scss' as *;
+
+.link {
+  text-decoration: none;
+  border: 1px solid $color-red;
+  border-radius: 4px;
+  padding: 7px 20px;
+  color: $color-grey-100;
+  font-family: $font-family;
+  font-size: $font-size-l;
+  font-weight: $font-weight-regular;
+  line-height: 26px;
+}

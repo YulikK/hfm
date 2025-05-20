@@ -1,0 +1,41 @@
+@use '@/shared/styles/constants.scss' as *;
+
+.navigation {
+  width: 100%;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pageWrap {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+}
+
+.authWrap {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.item {
+  margin: 0;
+  padding: 0;
+
+  &:nth-last-child(2) {
+    margin-left: auto;
+  }
+}
+
+.link {
+  font-size: $font-size-l;
+  margin: 0;
+  padding: 0;
+}

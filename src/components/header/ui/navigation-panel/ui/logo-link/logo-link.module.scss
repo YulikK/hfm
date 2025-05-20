@@ -1,0 +1,14 @@
+@use '@/shared/styles/constants.scss' as *;
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.img {
+  width: 119px;
+  height: 58px;
+}
