@@ -1,0 +1,41 @@
+@use '@/shared/styles/constants.scss' as *;
+@use '@/shared/styles/mixins.scss' as *;
+
+.registration {
+  background-image: url('@/shared/assets/hero.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.container {
+  @include container;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+
+.mainTitle {
+  background: linear-gradient(90deg, $color-gold-300 0%, $color-gold-700 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: $font-size-xxl;
+  font-weight: $font-weight-bold;
+  line-height: 70px;
+  margin: 0;
+  font-family: $font-family-title;
+}
+
+.subTitle {
+  color: $color-white;
+  font-family: $font-family-title;
+  font-size: $font-size-xxl;
+  font-weight: $font-weight-bold;
+  line-height: 70px;
+  margin: 0;
+}

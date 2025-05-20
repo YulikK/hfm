@@ -1,0 +1,106 @@
+@use '@/shared/styles/constants.scss' as *;
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  background-color: $color-white;
+  padding: 40px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 650px;
+}
+
+.formTitle {
+  padding-bottom: 8px;
+  margin: 0;
+  font-size: $font-size-xl;
+  font-weight: $font-weight-bold;
+  color: $color-black;
+}
+
+.inputsWrap {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.input,
+.select {
+  padding: 10px;
+  border: 1px solid $color-grey-600;
+  border-radius: 5px;
+  font-size: $font-size-l;
+
+  &::placeholder {
+    color: $color-grey-600;
+  }
+}
+
+.select {
+  appearance: none;
+  background-image: url('@/shared/assets/icons/arrow.svg');
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 16px;
+  padding-right: 28px;
+  color: $color-grey-600;
+
+  option {
+    color: $color-black;
+  }
+}
+
+.phoneWrap {
+  display: grid;
+  grid-template-columns: 61px 1fr;
+  gap: 10px;
+}
+
+.checkboxWrap {
+  align-self: flex-start;
+  padding-bottom: 21px;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: $font-size-s;
+  color: $color-grey-500;
+}
+
+.checkbox {
+  width: 15px;
+  height: 15px;
+  border: 1px solid $color-grey-600;
+  border-radius: 2px;
+  margin: 0;
+}
+
+.link {
+  color: $color-red;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.button {
+  padding: 15px 106px;
+  background-color: $color-green;
+  color: $color-white;
+  border: none;
+  border-radius: 4px;
+  font-size: $font-size-ll;
+  font-weight: $font-weight-bold;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}

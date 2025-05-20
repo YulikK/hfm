@@ -4,7 +4,8 @@
   display: flex;
 
   @media (min-width: $size-desktop) {
-    padding: 16px 240px;
+    padding-left: 240px;
+    padding-right: 240px;
   }
 
   @media (min-width: $size-tablet) and (max-width: #{$size-desktop - 1px}) {
