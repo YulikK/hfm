@@ -1,0 +1,74 @@
+@use '@/shared/styles/constants.scss' as *;
+@use '@/shared/styles/mixins.scss' as *;
+
+.features {
+  padding: 119px 0;
+  background-color: $color-white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  @include container;
+}
+
+.title {
+  font-family: $font-family-title;
+  font-size: $font-size-xxll;
+  font-weight: $font-weight-regular;
+  line-height: 50px;
+  margin: 0;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
+}
+
+.featureGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  flex: 1;
+  padding-right: 23px;
+  &:first-child {
+    align-items: flex-end;
+  }
+}
+
+.feature {
+  max-width: 178px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  gap: 16px;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.text {
+  margin: 0;
+  font-size: $font-size-m;
+  color: $color-grey-700;
+  line-height: 1.5;
+}
+
+.phones {
+  max-width: 628px;
+  width: 100%;
+  padding-top: 16px;
+}
+
+.phoneImage {
+  width: 100%;
+  height: auto;
+}

@@ -2,7 +2,6 @@
 @use '@/shared/styles/mixins.scss' as *;
 
 .header {
-  @include container;
   padding-top: 16px;
   padding-bottom: 24px;
   display: flex;
@@ -12,4 +11,5 @@
   justify-content: center;
   background-color: $color-black-900;
   color: $color-white;
+  @include container;
 }
