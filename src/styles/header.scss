@@ -1,0 +1,186 @@
+@use '@/shared/styles/constants.scss' as *;
+@use '@/shared/styles/mixins.scss' as *;
+
+.header {
+  padding-top: 22px;
+  padding-bottom: 24px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-black-900;
+  color: $color-white;
+  @include container;
+}
+
+.utility-panel {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+
+  &__member-text {
+    color: $color-grey-400;
+    font-size: $font-size-10;
+    font-weight: $font-weight-regular;
+  }
+
+  &__links-wrap {
+    display: flex;
+    align-items: center;
+    gap: 41px;
+  }
+
+  &__contacts-wrap {
+    display: flex;
+    align-items: center;
+
+    > * {
+      position: relative;
+      padding: 0 15px;
+
+      &:not(:first-child) {
+        padding-left: 15px;
+      }
+
+      &:not(:last-child) {
+        padding-right: 15px;
+
+        &::after {
+          content: '';
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 1px;
+          height: 16px;
+          background-color: $color-grey-700;
+        }
+      }
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+
+  &__link {
+    color: $color-grey-100;
+    text-decoration: none;
+    font-size: $font-size-14;
+  }
+}
+
+.download-app-link {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  text-decoration: none;
+
+  &__icon {
+    width: 10px;
+    height: 18px;
+    background-image: url('@/shared/assets/icons/phone.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  &__text {
+    color: $color-grey-100;
+    font-size: $font-size-14;
+  }
+}
+
+.language-link {
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    width: 17px;
+    height: 17px;
+  }
+}
+
+.navigation-panel {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 101px;
+}
+
+.logo-link {
+  &__img {
+    width: 119px;
+    height: 58px;
+  }
+}
+
+.navigation {
+  width: 100%;
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__pages-wrap {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+  }
+
+  &__auth-wrap {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+  }
+
+  &__item {
+    margin: 0;
+    padding: 0;
+
+    &:nth-last-child(2) {
+      margin-left: auto;
+    }
+  }
+
+  &__link {
+    color: $color-white;
+    text-decoration: none;
+    font-size: $font-size-16;
+    line-height: 26px;
+  }
+}
+
+.login-link,
+.register-link {
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: $font-size-16;
+  font-family: $font-family;
+  font-weight: $font-weight-regular;
+  line-height: 26px;
+}
+
+.login-link {
+  border: 1px solid $color-red;
+
+  padding: 7px 20px;
+  color: $color-grey-100;
+}
+
+.register-link {
+  background-color: $color-green;
+  padding: 9px 26px;
+  color: $color-white;
+}
