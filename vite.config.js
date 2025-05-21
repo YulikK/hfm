@@ -9,13 +9,16 @@ export default defineConfig({
   root: 'src',
   build: {
     outDir: 'dist',
+    assetsDir: 'assets',
+    rollupOptions: {
+      output: {
+        assetFileNames: 'assets/[name].[hash].[ext]',
+      },
+    },
   },
   css: {
-    modules: {
-      localsConvention: 'camelCase',
-      scopeBehavior: 'local',
-      generateScopedName: '[name]__[local]___[hash:base64:5]',
-    },
+    modules: false,
+    devSourcemap: true,
   },
   assetsInclude: ['**/*.svg'],
   resolve: {
