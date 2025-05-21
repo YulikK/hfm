@@ -6,6 +6,25 @@ import Component from '@/shared/ui/base-component/base-component';
 
 import styles from './features.module.scss';
 
+const features = [
+  {
+    icon: accountImg,
+    text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit',
+  },
+  {
+    icon: cashImg,
+    text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit',
+  },
+  {
+    icon: chartImg,
+    text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit',
+  },
+  {
+    icon: accountImg,
+    text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit',
+  },
+];
+
 export default class Features extends Component {
   constructor() {
     super({
@@ -44,25 +63,6 @@ export default class Features extends Component {
       tag: 'div',
       className: styles.content,
     });
-
-    const features = [
-      {
-        icon: accountImg,
-        text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit',
-      },
-      {
-        icon: cashImg,
-        text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit',
-      },
-      {
-        icon: chartImg,
-        text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit',
-      },
-      {
-        icon: accountImg,
-        text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit',
-      },
-    ];
 
     const phones = new Component({
       tag: 'div',

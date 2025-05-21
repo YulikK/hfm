@@ -2,8 +2,8 @@
 @use '@/shared/styles/mixins.scss' as *;
 
 .features {
-  padding: 119px 0;
-  background-color: $color-white;
+  padding-top: 119px;
+  background-color: $color-grey-50;
 }
 
 .container {
@@ -16,7 +16,7 @@
 
 .title {
   font-family: $font-family-title;
-  font-size: $font-size-xxll;
+  font-size: $font-size-50;
   font-weight: $font-weight-regular;
   line-height: 50px;
   margin: 0;
@@ -57,7 +57,7 @@
 
 .text {
   margin: 0;
-  font-size: $font-size-m;
+  font-size: $font-size-14;
   color: $color-grey-700;
   line-height: 1.5;
 }

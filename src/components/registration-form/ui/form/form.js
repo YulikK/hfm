@@ -1,4 +1,5 @@
 import Component from '@/shared/ui/base-component/base-component';
+import JoinBtn from '@/shared/ui/join-btn/join-btn';
 
 import styles from './form.module.scss';
 
@@ -161,11 +162,7 @@ export default class Form extends Component {
   }
 
   #createButton() {
-    const button = new Component({
-      tag: 'button',
-      className: styles.button,
-      text: 'JOIN NOW',
-    });
+    const button = new JoinBtn();
 
     button.setAttribute('type', 'submit');
 
