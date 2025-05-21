@@ -1,14 +1,15 @@
 @use '@/shared/styles/constants.scss' as *;
 
-@import '@/styles/header.scss';
-@import '@/styles/registration-form.scss';
-@import '@/styles/join-btn.scss';
-@import '@/styles/features.scss';
-@import '@/styles/prizes.scss';
-@import '@/styles/winners.scss';
-@import '@/styles/trophy.scss';
-@import '@/styles/winners-table.scss';
-@import '@/styles/faq.scss';
+@use '@/styles/header.scss';
+@use '@/styles/registration-form.scss';
+@use '@/styles/join-btn.scss';
+@use '@/styles/features.scss';
+@use '@/styles/prizes.scss';
+@use '@/styles/winners.scss';
+@use '@/styles/trophy.scss';
+@use '@/styles/winners-table.scss';
+@use '@/styles/faq.scss';
+@use '@/styles/footer.scss';
 
 body {
   margin: 0;
