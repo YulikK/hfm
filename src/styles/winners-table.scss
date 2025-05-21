@@ -7,12 +7,25 @@
   flex-direction: column;
   gap: 22px;
 
+  @media (max-width: #{$size-tablet-large}) {
+    width: 100%;
+    max-width: 600px;
+  }
+
   &__header {
     padding: 0;
     margin: 0;
     color: $color-black;
     font-size: $font-size-25;
     font-weight: $font-weight-bold;
+
+    @media (max-width: #{$size-tablet-large}) {
+      text-align: center;
+    }
+
+    @media (max-width: #{$size-tablet}) {
+      font-size: $font-size-20;
+    }
   }
 
   &__element {
@@ -20,6 +33,10 @@
     flex-direction: column;
     width: 100%;
     padding-top: 26px;
+
+    @media (max-width: #{$size-mobile}) {
+      padding-top: 15px;
+    }
   }
 
   &__thead,
@@ -40,10 +57,19 @@
     font-size: $font-size-16;
     font-weight: $font-weight-bold;
     line-height: 50px;
+
+    @media (max-width: #{$size-mobile}) {
+      font-size: $font-size-14;
+      line-height: 40px;
+    }
   }
 
   &__row {
     padding: 16px 0 11px 0;
+
+    @media (max-width: #{$size-mobile}) {
+      padding: 12px 0 8px 0;
+    }
   }
 
   &__th,
@@ -51,6 +77,11 @@
     flex: 1;
     padding: 0 20px;
     text-align: left;
+
+    @media (max-width: #{$size-mobile}) {
+      padding: 0 10px;
+      font-size: $font-size-14;
+    }
 
     &:last-child {
       max-width: 80px;
