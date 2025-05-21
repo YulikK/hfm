@@ -158,34 +158,31 @@
 
 .navigation {
   width: 100%;
-  &__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__pages {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 35px;
     list-style: none;
     margin: 0;
     padding: 0;
   }
 
-  &__pages-wrap {
-    display: flex;
-    align-items: center;
-    gap: 35px;
-  }
-
-  &__auth-wrap {
+  &__auth {
     display: flex;
     align-items: center;
     gap: 17px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
 
   &__item {
     margin: 0;
     padding: 0;
-
-    &:nth-last-child(2) {
-      margin-left: auto;
-    }
   }
 
   &__link {

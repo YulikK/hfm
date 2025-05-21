@@ -2,15 +2,37 @@
 @use '@/shared/styles/mixins.scss' as *;
 
 .footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: $color-black-900;
   color: $color-white;
   padding-top: 48px;
   padding-bottom: 114px;
 
+  @media (max-width: #{$size-tablet}) {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  @media (max-width: #{$size-mobile}) {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+
   &__container {
+    width: 100%;
+    box-sizing: border-box;
+
     display: flex;
     gap: 70px;
     @include container;
+
+    @media (max-width: #{$size-tablet-large}) {
+      flex-direction: column;
+      gap: 40px;
+    }
   }
 
   &__content {
@@ -18,12 +40,24 @@
     justify-content: space-between;
     flex-direction: column;
     gap: 22px;
+
+    @media (max-width: #{$size-tablet}) {
+      gap: 30px;
+    }
+
+    @media (max-width: #{$size-mobile}) {
+      gap: 20px;
+    }
   }
 
   &__social {
     display: flex;
     flex-direction: column;
     gap: 23px;
+
+    @media (max-width: #{$size-mobile}) {
+      gap: 15px;
+    }
   }
 
   &__title {
@@ -38,6 +72,11 @@
     display: flex;
     gap: 12px;
     align-items: center;
+
+    @media (max-width: #{$size-mobile}) {
+      gap: 10px;
+      // flex-wrap: wrap;
+    }
   }
 
   &__link {
@@ -55,12 +94,21 @@
     width: 24px;
     height: 24px;
     object-fit: contain;
+
+    @media (max-width: #{$size-mobile}) {
+      width: 20px;
+      height: 20px;
+    }
   }
 
   &__download {
     display: flex;
     flex-direction: column;
     gap: 11px;
+
+    @media (max-width: #{$size-mobile}) {
+      gap: 8px;
+    }
   }
 
   &__stores {
@@ -75,15 +123,22 @@
     border-radius: 8px;
     padding: 6px 11px;
 
+    @media (max-width: #{$size-mobile}) {
+      padding: 4px 8px;
+    }
+
     &:hover {
       opacity: 0.7;
     }
   }
 
   &__store-icon {
-    width: 98px;
     height: 23px;
     width: auto;
+
+    @media (max-width: #{$size-mobile}) {
+      height: 20px;
+    }
   }
 
   &__warning {
@@ -91,6 +146,15 @@
     flex-direction: column;
     gap: 56px;
     padding-top: 15px;
+
+    @media (max-width: #{$size-tablet}) {
+      gap: 30px;
+      padding-top: 0;
+    }
+
+    @media (max-width: #{$size-mobile}) {
+      gap: 20px;
+    }
   }
 
   &__warning-title {
@@ -106,5 +170,10 @@
     line-height: 14px;
     color: $color-grey-600;
     margin: 0;
+
+    @media (max-width: #{$size-mobile}) {
+      font-size: $font-size-10;
+      line-height: 13px;
+    }
   }
 }
