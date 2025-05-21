@@ -1,5 +1,5 @@
-@use '@/shared/styles/constants.scss' as *;
-@use '@/shared/styles/mixins.scss' as *;
+@use '@/styles/constants.scss' as *;
+@use '@/styles/mixins.scss' as *;
 
 .header {
   display: flex;
@@ -120,7 +120,7 @@
   &__icon {
     width: 10px;
     height: 18px;
-    background-image: url('@/shared/assets/icons/phone.svg');
+    background-image: url('@/assets/icons/phone.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
