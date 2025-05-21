@@ -2,7 +2,8 @@
 @use '@/shared/styles/mixins.scss' as *;
 
 .faq {
-  padding: 112px 0;
+  padding-top: 112px;
+  padding-bottom: 158px;
   background-color: $color-grey-50;
 }
 
@@ -25,7 +26,6 @@
 
 .content {
   width: 100%;
-  // max-width: 800px;
   display: flex;
   flex-direction: column;
   gap: 16px;
