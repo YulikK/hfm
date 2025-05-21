@@ -15,67 +15,127 @@
   </head>
   <body>
     <header class="header">
-      <div class="utility-panel">
-        <span class="utility-panel__member-text"
-          >Member of HF Markets Group</span
-        >
-        <div class="utility-panel__links-wrap">
-          <a href="#" class="download-app-link">
-            <span class="download-app-link__icon"></span>
-            <span class="download-app-link__text">Download App</span>
-          </a>
-          <div class="utility-panel__contacts-wrap">
-            <a href="#" class="utility-panel__link">Contact us</a>
-            <a href="#" class="utility-panel__link">Partner with us</a>
-            <a href="#" class="language-link">
-              <img
-                class="language-link__icon"
-                src="./shared/assets/icons/eng.svg"
-                alt="switch language"
-              />
+      <div class="content">
+        <div class="utility-panel">
+          <span class="utility-panel__member-text"
+            >Member of HF Markets Group</span
+          >
+          <div class="utility-panel__links-wrap">
+            <a href="#" class="download-app-link">
+              <span class="download-app-link__icon"></span>
+              <span class="download-app-link__text">Download App</span>
             </a>
+            <div class="utility-panel__contacts-wrap">
+              <a href="#" class="utility-panel__link">Contact us</a>
+              <a href="#" class="utility-panel__link">Partner with us</a>
+              <a href="#" class="language-link">
+                <img
+                  class="language-link__icon"
+                  src="./shared/assets/icons/eng.svg"
+                  alt="switch language"
+                />
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="navigation-panel">
-        <a href="#" class="logo-link">
-          <img
-            src="shared/assets/logo.svg"
-            alt="HFM"
-            class="logo-link__img"
-            width="119"
-            height="58"
-          />
-        </a>
-        <nav class="navigation">
-          <ul class="navigation__list">
-            <div class="navigation__pages-wrap">
-              <li class="navigation__item">
-                <a href="#" class="navigation__link">Markets</a>
+        <div class="navigation-panel">
+          <a href="#" class="logo-link">
+            <img
+              src="shared/assets/logo.svg"
+              alt="HFM"
+              class="logo-link__img"
+              width="119"
+              height="58"
+            />
+          </a>
+          <button id="burger" class="burger-menu" aria-label="Open mobile menu">
+            <span class="burger-menu__line"></span>
+          </button>
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <div class="navigation__pages-wrap">
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">Markets</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">Trading</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">Investing</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">Tools & Education</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">Company</a>
+                </li>
+              </div>
+              <div class="navigation__auth-wrap">
+                <li class="navigation__item">
+                  <a href="#" class="login-link">Login</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="register-link">Register</a>
+                </li>
+              </div>
+            </ul>
+          </nav>
+        </div>
+        <div class="mobile-menu-overlay"></div>
+        <div id="mobile-menu" class="mobile-menu">
+          <div class="mobile-menu__header">
+            <span class="utility-panel__member-text"
+              >Member of HF Markets Group</span
+            >
+            <button
+              id="close"
+              class="mobile-menu__close"
+              aria-label="Close menu"
+            >
+              <span class="mobile-menu__close-icon"></span>
+            </button>
+          </div>
+          <nav class="mobile-menu__nav">
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">Markets</a>
               </li>
-              <li class="navigation__item">
-                <a href="#" class="navigation__link">Trading</a>
+              <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">Trading</a>
               </li>
-              <li class="navigation__item">
-                <a href="#" class="navigation__link">Investing</a>
+              <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">Investing</a>
               </li>
-              <li class="navigation__item">
-                <a href="#" class="navigation__link">Tools & Education</a>
+              <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">Tools & Education</a>
               </li>
-              <li class="navigation__item">
-                <a href="#" class="navigation__link">Company</a>
+              <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">Company</a>
               </li>
+            </ul>
+          </nav>
+          <div class="mobile-menu__footer">
+            <div class="mobile-menu__auth">
+              <a href="#" class="login-link">Login</a>
+              <a href="#" class="register-link">Register</a>
             </div>
-            <div class="navigation__auth-wrap">
-              <li class="navigation__item">
-                <a href="#" class="login-link">Login</a>
-              </li>
-              <li class="navigation__item">
-                <a href="#" class="register-link">Register</a>
-              </li>
+            <div class="mobile-menu__contacts">
+              <a href="#" class="download-app-link">
+                <span class="download-app-link__icon"></span>
+                <span class="download-app-link__text">Download App</span>
+              </a>
+              <a href="#" class="utility-panel__link">Contact us</a>
+              <a href="#" class="utility-panel__link">Partner with us</a>
+              <a href="#" class="language-link">
+                <img
+                  class="language-link__icon"
+                  src="./shared/assets/icons/eng.svg"
+                  alt="switch language"
+                />
+              </a>
             </div>
-          </ul>
-        </nav>
+          </div>
+        </div>
       </div>
     </header>
     <main>
