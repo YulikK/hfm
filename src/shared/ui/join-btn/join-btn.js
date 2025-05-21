@@ -6,7 +6,7 @@ export default class JoinBtn extends Component {
   constructor() {
     super({
       tag: 'button',
-      className: styles.button,
+      className: styles['join-btn'],
       text: 'JOIN NOW',
     });
   }

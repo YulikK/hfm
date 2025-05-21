@@ -1,0 +1,81 @@
+@use '@/shared/styles/constants.scss' as *;
+@use '@/shared/styles/mixins.scss' as *;
+
+.prizes-module {
+  padding-top: 117px;
+  padding-bottom: 82px;
+  background-color: $color-white;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 78px;
+    @include container;
+  }
+
+  &__title {
+    font-family: $font-family-title;
+    font-size: $font-size-50;
+    font-weight: $font-weight-regular;
+    line-height: 50px;
+    margin: 0;
+    text-align: center;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 45px 69px 35px 69px;
+    background-color: $color-grey-100;
+    border-radius: 10px;
+    min-width: 280px;
+  }
+
+  &__medal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+  }
+
+  &__amount {
+    color: $color-black;
+    font-size: $font-size-50;
+    font-weight: $font-weight-bold;
+    line-height: 40px;
+  }
+
+  &__description {
+    margin: 0;
+    margin-top: 21px;
+    text-align: center;
+    color: $color-black;
+    font-size: $font-size-20;
+    font-weight: $font-weight-regular;
+    max-width: 160px;
+  }
+
+  &__buttonWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__terms {
+    margin: 0;
+    font-size: $font-size-12;
+    color: $color-grey-400;
+  }
+}
