@@ -51,7 +51,7 @@
           <button id="burger" class="burger-menu" aria-label="Open mobile menu">
             <span class="burger-menu__line"></span>
           </button>
-          <nav class="navigation">
+          <nav class="navigation" aria-label="Main navigation">
             <ul class="navigation__pages">
               <li class="navigation__item">
                 <a href="#" class="navigation__link">Markets</a>
@@ -79,7 +79,7 @@
             </ul>
           </nav>
         </div>
-        <div class="mobile-menu-overlay"></div>
+        <div id="overlay" class="mobile-menu-overlay"></div>
         <div id="mobile-menu" class="mobile-menu">
           <div class="mobile-menu__header">
             <span class="utility-panel__member-text"
@@ -93,7 +93,7 @@
               <span class="mobile-menu__close-icon"></span>
             </button>
           </div>
-          <nav class="mobile-menu__nav">
+          <nav class="mobile-menu__nav" aria-label="Mobile navigation">
             <ul class="mobile-menu__list">
               <li class="mobile-menu__item">
                 <a href="#" class="mobile-menu__link">Markets</a>
@@ -143,28 +143,57 @@
             <h1 class="registration__main-title">LOREM IPSUM DOLOR</h1>
             <h2 class="registration__sub-title">SIT AMET TOSIK</h2>
           </div>
-          <form class="form">
+          <form id="form" class="form">
             <h3 class="form__title">Lorem ipsum dolor sit amet</h3>
             <div class="form__inputs-wrap">
-              <input class="form__input" type="text" placeholder="First Name" />
-              <input class="form__input" type="text" placeholder="Last Name" />
-              <select class="form__select">
+              <input
+                class="form__input"
+                type="text"
+                placeholder="First Name"
+                name="first_name"
+                required
+              />
+              <input
+                class="form__input"
+                type="text"
+                placeholder="Last Name"
+                name="last_name"
+                required
+              />
+              <select id="country" class="form__select" name="country" required>
                 <option value="" disabled selected>Country</option>
                 <option>USA</option>
                 <option>UK</option>
-                <option>Canada</option>
+                <option>India</option>
               </select>
               <div class="form__phone-wrap">
                 <input
+                  id="phone_code"
                   class="form__input"
                   type="text"
                   placeholder="Code"
+                  name="phone_code"
                   maxlength="4"
+                  required
+                  readonly
                 />
-                <input class="form__input" type="tel" placeholder="Phone" />
+                <input
+                  class="form__input"
+                  type="tel"
+                  placeholder="Phone"
+                  name="phone"
+                  required
+                />
               </div>
-              <input class="form__input" type="email" placeholder="Email" />
-              <select class="form__select">
+              <input
+                id="email"
+                class="form__input"
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+              <select class="form__select" name="experience" required>
                 <option value="" disabled selected>Experience</option>
                 <option>Beginner</option>
                 <option>Intermediate</option>
@@ -173,7 +202,12 @@
             </div>
             <div class="form__checkbox-wrap">
               <label class="form__checkbox-label">
-                <input class="form__checkbox" type="checkbox" />
+                <input
+                  class="form__checkbox"
+                  type="checkbox"
+                  name="terms"
+                  required
+                />
                 <span>I have read and accepted the </span>
                 <a class="form__link" href="#">Privacy Policy</a>
                 <span> and </span>
