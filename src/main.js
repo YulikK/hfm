@@ -1,3 +1,4 @@
+import FAQ from './components/faq/faq';
 import Features from './components/features/features';
 import Header from './components/header/header';
 import Prizes from './components/prizes/prizes';
@@ -12,8 +13,10 @@ const form = new RegistrationForm();
 const feat = new Features();
 const prizes = new Prizes();
 const winners = new Winners();
+const faq = new FAQ();
 body.appendChild(header.getNode());
 body.appendChild(form.getNode());
 body.appendChild(feat.getNode());
 body.appendChild(prizes.getNode());
 body.appendChild(winners.getNode());
+body.appendChild(faq.getNode());
