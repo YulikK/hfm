@@ -1,0 +1,69 @@
+@use '@/shared/styles/constants.scss' as *;
+@use '@/shared/styles/mixins.scss' as *;
+
+.winners-table {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+
+  &__header {
+    padding: 0;
+    margin: 0;
+    color: $color-black;
+    font-size: $font-size-25;
+    font-weight: $font-weight-bold;
+  }
+
+  &__element {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 26px;
+  }
+
+  &__thead,
+  &__tbody {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__header-row,
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $color-grey-200;
+  }
+
+  &__header-row {
+    color: $color-red;
+    font-size: $font-size-16;
+    font-weight: $font-weight-bold;
+    line-height: 50px;
+  }
+
+  &__row {
+    padding: 16px 0 11px 0;
+  }
+
+  &__th,
+  &__td {
+    flex: 1;
+    padding: 0 20px;
+    text-align: left;
+
+    &:last-child {
+      max-width: 80px;
+    }
+
+    &_gain {
+      color: $color-red;
+    }
+  }
+
+  &__mark {
+    font-size: $font-size-12;
+    color: $color-grey-400;
+    font-weight: $font-weight-regular;
+  }
+}
