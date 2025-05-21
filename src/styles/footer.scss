@@ -75,7 +75,6 @@
 
     @media (max-width: #{$size-mobile}) {
       gap: 10px;
-      // flex-wrap: wrap;
     }
   }
 
@@ -85,8 +84,12 @@
     justify-content: center;
     transition: opacity 0.3s ease;
 
-    &:hover {
-      opacity: 0.7;
+    transition: opacity 0.3s ease;
+    @media (hover: hover) {
+      &:hover {
+        opacity: 0.6;
+        transition: opacity 0.3s ease;
+      }
     }
   }
 
@@ -118,17 +121,12 @@
 
   &__store {
     display: flex;
-    transition: opacity 0.3s ease;
     border: 1px solid $color-grey-300;
     border-radius: 8px;
     padding: 6px 11px;
 
     @media (max-width: #{$size-mobile}) {
       padding: 4px 8px;
-    }
-
-    &:hover {
-      opacity: 0.7;
     }
   }
 

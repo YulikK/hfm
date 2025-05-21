@@ -9,8 +9,12 @@
   font-size: $font-size-18;
   font-weight: $font-weight-bold;
   cursor: pointer;
+  transition: opacity 0.3s ease;
 
-  &:hover {
-    opacity: 0.9;
+  @media (hover: hover) {
+    &:hover {
+      opacity: 0.9;
+      transition: opacity 0.3s ease;
+    }
   }
 }

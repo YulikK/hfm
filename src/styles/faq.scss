@@ -94,6 +94,14 @@
     padding-bottom: 20px;
     cursor: pointer;
 
+    transition: opacity 0.3s ease;
+    @media (hover: hover) {
+      &:hover {
+        opacity: 0.6;
+        transition: opacity 0.3s ease;
+      }
+    }
+
     @media (max-width: #{$size-tablet}) {
       font-size: $font-size-18;
       padding-left: 40px;
