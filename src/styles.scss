@@ -1,0 +1,25 @@
+@use '@/styles/constants.scss' as *;
+
+@use '@/styles/header.scss';
+@use '@/styles/registration-form.scss';
+@use '@/styles/join-btn.scss';
+@use '@/styles/features.scss';
+@use '@/styles/prizes.scss';
+@use '@/styles/winners.scss';
+@use '@/styles/trophy.scss';
+@use '@/styles/winners-table.scss';
+@use '@/styles/faq.scss';
+@use '@/styles/footer.scss';
+
+body {
+  margin: 0;
+  font-family: $font-family;
+  background-color: $color-black-900;
+}
+
+.no-scroll {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}

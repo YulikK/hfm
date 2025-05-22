@@ -1,0 +1,73 @@
+@use '@/styles/constants.scss' as *;
+@use '@/styles/mixins.scss' as *;
+
+.winners {
+  width: 100%;
+  padding-top: 112px;
+  background-color: $color-grey-50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: #{$size-tablet}) {
+    padding-top: 80px;
+  }
+
+  @media (max-width: #{$size-mobile}) {
+    padding-top: 60px;
+  }
+
+  &__content {
+    display: flex;
+    gap: 23px;
+    width: 100%;
+
+    @media (max-width: #{$size-tablet-large}) {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+  }
+
+  &__container {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 76px;
+    @include container;
+
+    @media (max-width: #{$size-tablet}) {
+      gap: 40px;
+    }
+  }
+
+  &__title {
+    font-family: $font-family-title;
+    font-size: $font-size-50;
+    font-weight: $font-weight-regular;
+    margin: 0;
+    text-align: center;
+
+    @media (max-width: #{$size-tablet}) {
+      font-size: $font-size-24;
+      line-height: 30px;
+    }
+  }
+
+  &__button-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    padding-top: 4px;
+  }
+
+  &__terms {
+    color: $color-grey-400;
+    font-size: $font-size-12;
+    font-weight: $font-weight-regular;
+    line-height: 23px;
+  }
+}

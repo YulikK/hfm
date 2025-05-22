@@ -1,0 +1,189 @@
+@use '@/styles/constants.scss' as *;
+@use '@/styles/mixins.scss' as *;
+
+.registration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('@/assets/hero.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 74px;
+  padding-bottom: 80px;
+
+  &__container {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    @include container;
+  }
+
+  &__main-title {
+    background: linear-gradient(
+      90deg,
+      $color-gold-300 0%,
+      $color-gold-700 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: $font-size-70;
+    font-weight: $font-weight-bold;
+    line-height: 70px;
+    margin: 0;
+    font-family: $font-family-title;
+
+    @media (max-width: #{$size-tablet}) {
+      font-size: $font-size-50;
+      line-height: 50px;
+    }
+
+    @media (max-width: #{$size-mobile}) {
+      font-size: $font-size-24;
+      line-height: 30px;
+    }
+  }
+
+  &__sub-title {
+    color: $color-white;
+    font-family: $font-family-title;
+    font-size: $font-size-70;
+    font-weight: $font-weight-bold;
+    line-height: 70px;
+    margin: 0;
+
+    @media (max-width: #{$size-tablet}) {
+      font-size: $font-size-50;
+      line-height: 50px;
+    }
+
+    @media (max-width: #{$size-mobile}) {
+      font-size: $font-size-24;
+      line-height: 30px;
+    }
+  }
+
+  @media (max-width: #{$size-tablet}) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @media (max-width: #{$size-mobile}) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.form {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  background-color: $color-white;
+  padding: 40px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 730px;
+
+  &__title {
+    padding-bottom: 8px;
+    margin: 0;
+    font-size: $font-size-24;
+    font-weight: $font-weight-bold;
+    color: $color-black;
+  }
+
+  &__inputs-wrap {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+    @media (max-width: #{$size-tablet}) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__input,
+  &__select {
+    padding: 10px;
+    border: 1px solid $color-grey-600;
+    border-radius: 5px;
+    font-size: $font-size-16;
+    color: $color-grey-600;
+
+    &::placeholder {
+      color: $color-grey-600;
+    }
+
+    @media (max-width: #{$size-tablet}) {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+  }
+
+  &__select {
+    appearance: none;
+    background-image: url('@/assets/icons/arrow.svg');
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 16px;
+    padding-right: 28px;
+
+    option {
+      color: $color-black;
+    }
+  }
+
+  &__phone-wrap {
+    display: grid;
+    grid-template-columns: 61px 1fr;
+    gap: 10px;
+
+    @media (max-width: #{$size-tablet}) {
+      grid-template-columns: 80px 1fr;
+    }
+  }
+
+  &__checkbox-wrap {
+    align-self: flex-start;
+    padding-bottom: 16px;
+  }
+
+  &__checkbox-label {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: $font-size-12;
+    color: $color-grey-500;
+  }
+
+  &__checkbox {
+    width: 15px;
+    height: 15px;
+    border: 1px solid $color-grey-600;
+    border-radius: 2px;
+    margin: 0;
+  }
+
+  &__link {
+    color: $color-red;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @media (max-width: #{$size-tablet}) {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,202 @@
+@use '@/styles/constants.scss' as *;
+@use '@/styles/mixins.scss' as *;
+
+.faq {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 112px;
+  padding-bottom: 158px;
+  background-color: $color-grey-50;
+
+  @media (max-width: #{$size-tablet}) {
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+
+  @media (max-width: #{$size-mobile}) {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+
+  &__container {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 91px;
+    @include container;
+
+    @media (max-width: #{$size-tablet}) {
+      gap: 60px;
+    }
+
+    @media (max-width: #{$size-mobile}) {
+      gap: 40px;
+    }
+  }
+
+  &__title {
+    font-family: $font-family-title;
+    font-size: $font-size-50;
+    font-weight: $font-weight-regular;
+    line-height: 50px;
+    margin: 0;
+    text-align: center;
+
+    @media (max-width: #{$size-tablet}) {
+      font-size: $font-size-24;
+      line-height: 30px;
+    }
+  }
+
+  &__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__item {
+    border-bottom: 1px solid $color-grey-200;
+    cursor: pointer;
+
+    &[open] {
+      .faq__question {
+        border-bottom: 2px solid $color-grey-450;
+      }
+      .faq__question::after {
+        transform: rotate(180deg) translateY(80%);
+      }
+      .faq__answer {
+        animation: fadeIn 0.4s ease-out forwards;
+      }
+    }
+
+    &:not([open]) {
+      .faq__answer {
+        animation: fadeOut 0.3s ease-out forwards;
+      }
+    }
+  }
+
+  &__question {
+    position: relative;
+    list-style: none;
+    font-size: $font-size-20;
+    color: $color-black;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-right: 32px;
+    padding-left: 71px;
+    padding-bottom: 20px;
+    cursor: pointer;
+
+    transition: opacity 0.3s ease;
+    @media (hover: hover) {
+      &:hover {
+        opacity: 0.6;
+        transition: opacity 0.3s ease;
+      }
+    }
+
+    @media (max-width: #{$size-tablet}) {
+      font-size: $font-size-18;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    @media (max-width: #{$size-mobile}) {
+      font-size: $font-size-16;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 52px;
+      top: 50%;
+      width: 25px;
+      height: 25px;
+      background-image: url('@/assets/icons/arrow.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      transform: translateY(-50%);
+      transition: transform 0.3s ease;
+
+      @media (max-width: #{$size-tablet}) {
+        right: 20px;
+        width: 20px;
+        height: 20px;
+      }
+
+      @media (max-width: #{$size-mobile}) {
+        right: 10px;
+      }
+    }
+  }
+
+  &__answer {
+    margin: 0;
+    font-size: $font-size-16;
+    padding-right: 32px;
+    padding-left: 73px;
+    padding-top: 23px;
+    padding-bottom: 18px;
+    color: $color-black;
+    line-height: 1.5;
+    transition: all 0.3s ease-out;
+
+    @media (max-width: #{$size-tablet}) {
+      font-size: $font-size-14;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+
+    @media (max-width: #{$size-mobile}) {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 500px;
+    padding-top: 23px;
+    padding-bottom: 18px;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    max-height: 500px;
+    padding-top: 23px;
+    padding-bottom: 18px;
+  }
+  to {
+    opacity: 0;
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}

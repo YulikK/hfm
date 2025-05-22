@@ -1,0 +1,20 @@
+@use '@/styles/constants.scss' as *;
+
+.join-btn {
+  padding: 15px 106px;
+  background-color: $color-green;
+  color: $color-white;
+  border: none;
+  border-radius: 4px;
+  font-size: $font-size-18;
+  font-weight: $font-weight-bold;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+
+  @media (hover: hover) {
+    &:hover {
+      opacity: 0.9;
+      transition: opacity 0.3s ease;
+    }
+  }
+}
