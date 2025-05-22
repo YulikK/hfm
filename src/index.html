@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <title>HF Markets</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="content">
+        <div class="utility-panel">
+          <span class="utility-panel__member-text"
+            >Member of HF Markets Group</span
+          >
+          <div class="utility-panel__links-wrap">
+            <a href="#" class="download-app-link">
+              <span class="download-app-link__icon"></span>
+              <span class="download-app-link__text">Download App</span>
+            </a>
+            <div class="utility-panel__contacts-wrap">
+              <a href="#" class="utility-panel__link">Contact us</a>
+              <a href="#" class="utility-panel__link">Partner with us</a>
+              <a href="#" class="language-link">
+                <img
+                  class="language-link__icon"
+                  src="assets/icons/eng.svg"
+                  alt="switch language"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="navigation-panel">
+          <a href="#" class="logo-link">
+            <img
+              src="assets/logo.svg"
+              alt="HFM"
+              class="logo-link__img"
+              width="119"
+              height="58"
+            />
+          </a>
+          <button id="burger" class="burger-menu" aria-label="Open mobile menu">
+            <span class="burger-menu__line"></span>
+          </button>
+          <nav class="navigation" aria-label="Main navigation">
+            <ul class="navigation__pages">
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Markets</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Trading</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Investing</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Tools & Education</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Company</a>
+              </li>
+            </ul>
+            <ul class="navigation__auth">
+              <li class="navigation__item">
+                <a href="#" class="login-link">Login</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="register-link">Register</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div id="overlay" class="mobile-menu-overlay"></div>
+        <div id="mobile-menu" class="mobile-menu">
+          <div class="mobile-menu__header">
+            <span class="utility-panel__member-text"
+              >Member of HF Markets Group</span
+            >
+            <button
+              id="close"
+              class="mobile-menu__close"
+              aria-label="Close menu"
+            >
+              <span class="mobile-menu__close-icon"></span>
+            </button>
+          </div>
+          <nav class="mobile-menu__nav" aria-label="Mobile navigation">
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">Markets</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">Trading</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">Investing</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">Tools & Education</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">Company</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="mobile-menu__footer">
+            <div class="mobile-menu__auth">
+              <a href="#" class="login-link">Login</a>
+              <a href="#" class="register-link">Register</a>
+            </div>
+            <div class="mobile-menu__contacts">
+              <a href="#" class="download-app-link">
+                <span class="download-app-link__icon"></span>
+                <span class="download-app-link__text">Download App</span>
+              </a>
+              <a href="#" class="utility-panel__link">Contact us</a>
+              <a href="#" class="utility-panel__link">Partner with us</a>
+              <a href="#" class="language-link">
+                <img
+                  class="language-link__icon"
+                  src="assets/icons/eng.svg"
+                  alt="switch language"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="registration">
+        <div class="registration__container">
+          <div class="registration__title">
+            <h1 class="registration__main-title">LOREM IPSUM DOLOR</h1>
+            <h2 class="registration__sub-title">SIT AMET TOSIK</h2>
+          </div>
+          <form id="form" class="form">
+            <h3 class="form__title">Lorem ipsum dolor sit amet</h3>
+            <div class="form__inputs-wrap">
+              <input
+                class="form__input"
+                type="text"
+                placeholder="First Name"
+                name="first_name"
+                required
+              />
+              <input
+                class="form__input"
+                type="text"
+                placeholder="Last Name"
+                name="last_name"
+                required
+              />
+              <select id="country" class="form__select" name="country" required>
+                <option value="" disabled selected>Country</option>
+                <option>USA</option>
+                <option>UK</option>
+                <option>India</option>
+              </select>
+              <div class="form__phone-wrap">
+                <input
+                  id="phone_code"
+                  class="form__input"
+                  type="text"
+                  placeholder="Code"
+                  name="phone_code"
+                  maxlength="4"
+                  required
+                  readonly
+                />
+                <input
+                  class="form__input"
+                  type="tel"
+                  placeholder="Phone"
+                  name="phone"
+                  required
+                />
+              </div>
+              <input
+                id="email"
+                class="form__input"
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+              <select class="form__select" name="experience" required>
+                <option value="" disabled selected>Experience</option>
+                <option>Beginner</option>
+                <option>Intermediate</option>
+                <option>Expert</option>
+              </select>
+            </div>
+            <div class="form__checkbox-wrap">
+              <label class="form__checkbox-label">
+                <input
+                  class="form__checkbox"
+                  type="checkbox"
+                  name="terms"
+                  required
+                />
+                <span>I have read and accepted the </span>
+                <a class="form__link" href="#">Privacy Policy</a>
+                <span> and </span>
+                <a class="form__link" href="#">Terms and Conditions</a>
+              </label>
+            </div>
+            <button class="join-btn" type="submit">JOIN NOW</button>
+          </form>
+        </div>
+      </section>
+      <section class="features">
+        <div class="features__container">
+          <h2 class="features__title">QUISQUE RUTRUM</h2>
+          <div class="features__content">
+            <div class="features__group">
+              <figure class="features__feature">
+                <img
+                  class="features__icon"
+                  src="assets/icons/account.svg"
+                  alt="Feature icon"
+                />
+                <figcaption class="features__text">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+                </figcaption>
+              </figure>
+              <figure class="features__feature">
+                <img
+                  class="features__icon"
+                  src="assets/icons/cash.svg"
+                  alt="Feature icon"
+                />
+                <figcaption class="features__text">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+                </figcaption>
+              </figure>
+            </div>
+            <div class="features__phones">
+              <img
+                class="features__phone-image"
+                src="assets/smart-phone.png"
+                alt="Smart phones"
+              />
+            </div>
+            <div class="features__group">
+              <figure class="features__feature">
+                <img
+                  class="features__icon"
+                  src="assets/icons/chart.svg"
+                  alt="Feature icon"
+                />
+                <figcaption class="features__text">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+                </figcaption>
+              </figure>
+              <figure class="features__feature">
+                <img
+                  class="features__icon"
+                  src="assets/icons/account.svg"
+                  alt="Feature icon"
+                />
+                <figcaption class="features__text">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="prizes-module">
+        <div class="prizes-module__container">
+          <h2 class="prizes-module__title">PRIZES</h2>
+          <div class="prizes-module__content">
+            <div class="prizes-module__card">
+              <img
+                class="prizes-module__medal"
+                src="assets/icons/medal-1.svg"
+                alt="medal-1"
+              />
+              <div class="prizes-module__amount">$1000</div>
+              <p class="prizes-module__description">
+                CRAS DAPIBUS &amp; CRAS DAPIBUS
+              </p>
+            </div>
+            <div class="prizes-module__card">
+              <img
+                class="prizes-module__medal"
+                src="assets/icons/medal-2.svg"
+                alt="medal-2"
+              />
+              <div class="prizes-module__amount">$1000</div>
+              <p class="prizes-module__description">CRAS DAPIBUS</p>
+            </div>
+            <div class="prizes-module__card">
+              <img
+                class="prizes-module__medal"
+                src="assets/icons/medal-3.svg"
+                alt="medal-3"
+              />
+              <div class="prizes-module__amount">$1000</div>
+              <p class="prizes-module__description">CRAS DAPIBUS</p>
+            </div>
+          </div>
+          <div class="prizes-module__buttonWrap">
+            <button class="join-btn">JOIN NOW</button>
+            <p class="prizes-module__terms">Terms and Conditions apply</p>
+          </div>
+        </div>
+      </section>
+      <section class="winners">
+        <div class="winners__container">
+          <h2 class="winners__title">SED FRINGILLA MAURIS SIT</h2>
+          <div class="winners__content">
+            <article class="trophy">
+              <div class="trophy__card">
+                <img
+                  class="trophy__icon"
+                  src="assets/icons/trophy-1.svg"
+                  alt="Winner trophy for 1 place"
+                />
+                <div class="trophy__info">
+                  <h6 class="trophy__date">JANUARY 1ST WINNER</h6>
+                  <div class="trophy__user">
+                    <p class="trophy__name">JOHN SMITH</p>
+                    <span class="trophy__id">5678987654</span>
+                  </div>
+                  <p class="trophy__gain">
+                    TOTAL GAIN OF
+                    <span class="trophy__percent">16344%</span>
+                  </p>
+                </div>
+                <div class="trophy__prize">$1000</div>
+              </div>
+              <div class="trophy__card">
+                <img
+                  class="trophy__icon"
+                  src="assets/icons/trophy-2.svg"
+                  alt="Winner trophy for 2 place"
+                />
+                <div class="trophy__info">
+                  <h6 class="trophy__date">JANUARY 2ND WINNER</h6>
+                  <div class="trophy__user">
+                    <p class="trophy__name">JOHN SMITH</p>
+                    <span class="trophy__id">5678987654</span>
+                  </div>
+                  <p class="trophy__gain">
+                    TOTAL GAIN OF
+                    <span class="trophy__percent">16344%</span>
+                  </p>
+                </div>
+                <div class="trophy__prize">$1000</div>
+              </div>
+              <div class="trophy__card">
+                <img
+                  class="trophy__icon"
+                  src="assets/icons/trophy-3.svg"
+                  alt="Winner trophy for 3 place"
+                />
+                <div class="trophy__info">
+                  <h6 class="trophy__date">JANUARY 3RD WINNER</h6>
+                  <div class="trophy__user">
+                    <p class="trophy__name">JOHN SMITH</p>
+                    <span class="trophy__id">5678987654</span>
+                  </div>
+                  <p class="trophy__gain">
+                    TOTAL GAIN OF
+                    <span class="trophy__percent">16344%</span>
+                  </p>
+                </div>
+                <div class="trophy__prize">$1000</div>
+              </div>
+            </article>
+            <article class="winners-table">
+              <h3 class="winners-table__header">ALIQUAM LOREM ANT</h3>
+              <table class="winners-table__element">
+                <thead class="winners-table__thead">
+                  <tr class="winners-table__header-row">
+                    <th class="winners-table__th">NAME</th>
+                    <th class="winners-table__th">GAIN</th>
+                  </tr>
+                </thead>
+                <tbody class="winners-table__tbody">
+                  <tr class="winners-table__row">
+                    <td class="winners-table__td">John Smith</td>
+                    <td class="winners-table__td winners-table__td_gain">
+                      1624.19%
+                    </td>
+                  </tr>
+                  <tr class="winners-table__row">
+                    <td class="winners-table__td">John Smith</td>
+                    <td class="winners-table__td winners-table__td_gain">
+                      1083.63%
+                    </td>
+                  </tr>
+                  <tr class="winners-table__row">
+                    <td class="winners-table__td">John Smith</td>
+                    <td class="winners-table__td winners-table__td_gain">
+                      635.47%
+                    </td>
+                  </tr>
+                  <tr class="winners-table__row">
+                    <td class="winners-table__td">John Smith</td>
+                    <td class="winners-table__td winners-table__td_gain">
+                      169.20%
+                    </td>
+                  </tr>
+                  <tr class="winners-table__row">
+                    <td class="winners-table__td">John Smith</td>
+                    <td class="winners-table__td winners-table__td_gain">
+                      158.62%
+                    </td>
+                  </tr>
+                  <tr class="winners-table__row">
+                    <td class="winners-table__td">John Smith</td>
+                    <td class="winners-table__td winners-table__td_gain">
+                      124.50%
+                    </td>
+                  </tr>
+                  <tr class="winners-table__row">
+                    <td class="winners-table__td">John Smith</td>
+                    <td class="winners-table__td winners-table__td_gain">
+                      71.47%
+                    </td>
+                  </tr>
+                  <tr class="winners-table__row">
+                    <td class="winners-table__td">John Smith</td>
+                    <td class="winners-table__td winners-table__td_gain">
+                      67.05%
+                    </td>
+                  </tr>
+                  <tr class="winners-table__row">
+                    <td class="winners-table__td">John Smith</td>
+                    <td class="winners-table__td winners-table__td_gain">
+                      62.30%
+                    </td>
+                  </tr>
+                  <tr class="winners-table__row">
+                    <td class="winners-table__td">John Smith</td>
+                    <td class="winners-table__td winners-table__td_gain">
+                      61.74%
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="winners-table__mark"
+                >Nam quam nunc, blandit vel, luctus pulvinar</span
+              >
+            </article>
+          </div>
+          <div class="winners__button-wrap">
+            <button class="join-btn">JOIN NOW</button>
+            <span class="winners__terms">Terms and Conditions apply</span>
+          </div>
+        </div>
+      </section>
+      <section class="faq">
+        <div class="faq__container">
+          <h2 class="faq__title">FAQs</h2>
+          <div class="faq__content">
+            <details class="faq__item">
+              <summary class="faq__question">Question A</summary>
+              <p class="faq__answer">Answer A</p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question">Question B</summary>
+              <p class="faq__answer">Answer B</p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question">Question C</summary>
+              <p class="faq__answer">Answer C</p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question">Question D</summary>
+              <p class="faq__answer">Answer D</p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__content">
+          <div class="footer__social">
+            <h3 class="footer__title">Find us on</h3>
+            <div class="footer__links">
+              <a
+                class="footer__link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  class="footer__icon"
+                  src="assets/icons/facebook.svg"
+                  alt="Facebook" /></a
+              ><a
+                class="footer__link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  class="footer__icon"
+                  src="assets/icons/x.svg"
+                  alt="Twitter" /></a
+              ><a
+                class="footer__link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  class="footer__icon"
+                  src="assets/icons/telegram.svg"
+                  alt="Telegram" /></a
+              ><a
+                class="footer__link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  class="footer__icon"
+                  src="assets/icons/youtube.svg"
+                  alt="YouTube" /></a
+              ><a
+                class="footer__link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  class="footer__icon"
+                  src="assets/icons/instagram.svg"
+                  alt="Instagram" /></a
+              ><a
+                class="footer__link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  class="footer__icon"
+                  src="assets/icons/in.svg"
+                  alt="LinkedIn" /></a
+              ><a
+                class="footer__link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  class="footer__icon"
+                  src="assets/icons/term.png"
+                  alt="Term"
+              /></a>
+            </div>
+          </div>
+          <div class="footer__download">
+            <h3 class="footer__title">Download HFM App</h3>
+            <div class="footer__stores">
+              <a
+                class="footer__store"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  class="footer__store-icon"
+                  src="assets/icons/app-store.svg"
+                  alt="Download on App Store" /></a
+              ><a
+                class="footer__store"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  class="footer__store-icon"
+                  src="assets/icons/google-store.svg"
+                  alt="Get it on Google Play"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__warning">
+          <h3 class="footer__warning-title">Risk Warning</h3>
+          <p class="footer__warning-text">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+            Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
+            aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+            imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pLorem
+            ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+            ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
+            magnis dis parturient montes, nascetur ridiculus mus. Donec quam
+            felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+            consequat massa quis enim. Donec pede justo, fringilla vel, aliquet
+            nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,
+            venenatis vitae, justo. Nullam dictum felis eu p
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
