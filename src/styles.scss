@@ -16,3 +16,10 @@ body {
   font-family: $font-family;
   background-color: $color-black-900;
 }
+
+.no-scroll {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
