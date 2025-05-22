@@ -16,6 +16,7 @@ export default defineConfig({
       },
     },
   },
+  base: './',
   css: {
     modules: false,
     devSourcemap: true,
